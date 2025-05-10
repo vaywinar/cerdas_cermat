@@ -1,0 +1,22 @@
+{
+  "install": "npm install && npm run build",
+  "start": "npm start",
+  "watch": {
+    "ignore": [
+      "build",
+      "dist",
+      "node_modules"
+    ],
+    "install": {
+      "include": [
+        "^package\\.json$"
+      ]
+    },
+    "restart": {
+      "include": [
+        "^server/"
+      ]
+    },
+    "throttle": 1000
+  }
+}
